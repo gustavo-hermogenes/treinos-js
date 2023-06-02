@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        First page with JavaScript
+    </header>
+
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <h3 id="agradecimento"></h3>
+    <div>
+        <p onclick="redirecionarNew()">Abrir Github em nova aba/ Open Github on new window.</p>
+        <p onclick="redirecionarSame()">Abrir Github na mesma janela/ Open Github on the same window</p>
+    </div>
+    <div>
+        <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+        <p id="mousemove" onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui</p>
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>    
+            <option value="3">Valor 3</option>
+        </select>
+        <p id="selecionado"></p>
+    </div>
+</body>
+</html>
